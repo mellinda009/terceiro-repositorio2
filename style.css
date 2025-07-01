@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root{
@@ -108,39 +107,49 @@ body{
     font-size: 24px;
 }
 
-    .checkbox {
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
+label {
+    font-size: 20px;
+}
 
-    }
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
 
-    label{
-        font-size: 20px;
-    }
-     .barra {
-        background-color: var(--fundo-senha);
-        height: 30px;
-        width: 100px;
-     }
+.barra {
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
 
-     .forca {
-        height: 30px;
-        position: relative;
-        bottom: 30px;
-     }
+.forca {
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
 
-     .fraca {
-        width: 20%;
-        background-color: #e71b32;
-     }
+.fraca{
+    width: 25%;
+    background-color: #E71832;
+}
 
-    
-     .parametro-senha-textos {
-        display: flex;
-        justify-content: space-between;
-     }
-     
+.parametro-senha-textos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.media {
+    background-color: #FAF408;
+    width: 50%;
+}
+
+.forte {
+    background-color: #00FF85;
+    width: 100%;
+}
+
+
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
