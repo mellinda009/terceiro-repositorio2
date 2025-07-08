@@ -48,19 +48,17 @@ function geraSenha() {
  }
 
  console.log(alfabeto);
-    let senha= '';
-    for(let i=0; i < tamanhoSenha; i++){
-    numeroAleatorio = Math.random()*alfabeto.length;
-    senha = senha + alfabeto[numeroAleatorio]
+    let senha = '';
+    for (let i=0; i < tamanhoSenha; i++) {
+        let numeroAleatorio = Math.random()*alfabeto.length;
+        numeroAleatorio = Math.floor(numeroAleatorio);
+        senha = senha + alfabeto[numeroAleatorio];
     }
-     
+    campoSenha.value = senha;
 }
 
 geraSenha();
 
-function geraSenha() {
-
-    for(let i=0; i < checklength; i++;)
-        {
-        
+for (i=0; i< checkbox.length; i++) {
+    checkbox[i].onclick = geraSenha;
 }
